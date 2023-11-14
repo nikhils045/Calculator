@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: visible;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, rgb(53, 48, 48), rgb(28, 54, 46));
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 32rem;
+  width: 16rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border: 1px solid rgb(63, 63, 63);
+  border-radius: 2rem;
+  background: black;
+  color: white;
+  box-shadow: 0 0 15px 3px rgb(22, 21, 21);
+}
+
+.mobile-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+  font-size: 75%;
+}
+.right-bar {
+  font-size: 90%;
+}
+
+.input-div {
+  margin: 1.2rem 0;
+}
+
+input {
+  height: 7rem;
+  width: 100%;
+  padding: 4rem 0.8rem 0 0;
+  border: 0;
+  outline: 0;
+  font-size: 300%;
+  font-weight: 200;
+  background: black;
+  color: white;
+  text-align: right;
+  vertical-align: text-bottom;
+}
+input::placeholder {
+  color: white;
+}
+
+.buttons-div {
+  height: 18rem;
+  width: 14rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+button {
+  height: 3.1rem;
+  width: 3.1rem;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+button.number {
+  background: rgb(54, 50, 50);
+  color: white;
+  font-size: 140%;
+  font-weight: 400;
+}
+button.operator {
+  background: rgb(235, 155, 7);
+  color: white;
+  font-size: 155%;
+  font-weight: 500;
+}
+button.special-operator {
+  background: rgb(167, 164, 164);
+  color: black;
+  font-size: 125%;
+  font-weight: 500;
+}
+button#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  border-radius: 2rem;
+  text-align: left;
+  padding-left: 17%;
+}
+
+.whiteline {
+  width: 5rem;
+  height: 0.2rem;
+  background: white;
+  position: absolute;
+  top: 97.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+}
