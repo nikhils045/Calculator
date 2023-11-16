@@ -1,7 +1,7 @@
 # Calculator
 This project is a recreation of the calculator landing page using HTML, CSS, and JavaScript. The goal of the project is to create a responsive and visually appealing landing page that replicates the look and feel of the actual calculator website.
 <br>
-## Watch the Live [Demo](https://nikhils045.github.io/Calculator/)
+## Watch the Live [Demo](https://nikhils045.github.io/Calculator)
 
 
 ## Technologies Used
