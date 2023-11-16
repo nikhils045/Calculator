@@ -3,6 +3,7 @@ This project is a recreation of the calculator landing page using HTML, CSS, and
 <br>
 ## Watch the Live [Demo](https://nikhils045.github.io/Calculator/)
 <br>
+
 ## Technologies Used
 <pre>
 HTML: For structuring the content of the landing page
