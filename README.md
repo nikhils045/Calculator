@@ -6,7 +6,7 @@ This project is a recreation of the calculator landing page using HTML, CSS, and
 
 ## Technologies Used
 <pre>
-HTML: For structuring the content of the landing page
-CSS: For styling the landing page and making it responsive
-JavaScript: For adding interactive elements to the landing page
+<b>HTML:</b> For structuring the content of the landing page
+<b>CSS:</b> For styling the landing page and making it responsive
+<b>JavaScript:</b> For adding interactive elements to the landing page
 </pre>
