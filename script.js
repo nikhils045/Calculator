@@ -7,28 +7,6 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => handleButtonClick(button.textContent));
 });
 
-// Add keyboard event listener
-document.addEventListener("keydown", (event) => {
-  event.preventDefault(); // Prevent default behavior of the keydown event
-  const keyPressed = event.key;
-
-  // Handle backspace key
-  if (keyPressed === "Backspace") {
-    inputField.value = inputField.value.slice(0, -1); // Remove the last character
-  }
-
-  // Check if the pressed key is a number, operator, or special character
-  if (/[\d\+\-\*\/%]/.test(keyPressed)) {
-    handleButtonClick(keyPressed);
-  } else if (keyPressed === "." && !inputField.value.endsWith(".")) {
-    handleButtonClick(keyPressed);
-  } else if (keyPressed === "=" || keyPressed === "Enter") {
-    handleButtonClick("=");
-  } else if (keyPressed === "Escape") {
-    handleButtonClick("AC");
-  }
-});
-
 // Function to handle button clicks
 function handleButtonClick(buttonText) {
   // Check if the input field is empty and the clicked button is '0'
@@ -75,3 +53,25 @@ function handleButtonClick(buttonText) {
     }
   }
 }
+
+// Add keyboard event listener
+document.addEventListener("keydown", (event) => {
+  event.preventDefault(); // Prevent default behavior of the keydown event
+  const keyPressed = event.key;
+
+  // Handle backspace key
+  if (keyPressed === "Backspace") {
+    inputField.value = inputField.value.slice(0, -1); // Remove the last character
+  }
+
+  // Check if the pressed key is a number, operator, or special character
+  if (/[\d\+\-\*\/%]/.test(keyPressed)) {
+    handleButtonClick(keyPressed);
+  } else if (keyPressed === "." && !inputField.value.endsWith(".")) {
+    handleButtonClick(keyPressed);
+  } else if (keyPressed === "=" || keyPressed === "Enter") {
+    handleButtonClick("=");
+  } else if (keyPressed === "Escape") {
+    handleButtonClick("AC");
+  }
+});
