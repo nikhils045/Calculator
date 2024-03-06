@@ -3,6 +3,7 @@ A simple calculator looks like Iphone-Calculator built with HTML, CSS, and JavaS
 
 ## Features
 
+- Design of this Calculator is similar to Apple iOS Calculator
 - Basic arithmetic operations: addition, subtraction, multiplication, and division
 - Support for negative numbers
 - Percentage calculation
